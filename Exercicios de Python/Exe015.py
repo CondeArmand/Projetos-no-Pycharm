@@ -1,0 +1,5 @@
+print('Calcule o valor a pagar pelo aluguel do carro.')
+dd = int(input('Informe a quantidade de dias alugados: '))
+km = float(input('Informe a quantidade de quilometros rodados: '))
+tp = (dd * 60) + (km * 0.15)
+print('O valor do aluguel a ser pago é R${:.2f}'.format(tp))
