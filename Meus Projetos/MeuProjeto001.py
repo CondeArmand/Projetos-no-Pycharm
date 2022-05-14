@@ -1,6 +1,8 @@
-for c in range(0, 3):
-    n1 = float(input('Nota 1: '))
-    n2 = float(input('Nota 2: '))
-    media = (n1 + n2) / 2
-    print(media)
-
+x = 9
+for i in range(9):
+    x = x + 2
+    print(x, end=' ')
+    if i < 4:
+        continue
+    x = x - i
+    print(x, end=' ')
