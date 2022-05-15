@@ -9,7 +9,7 @@ while on == 'S':  # Interruptor para repertir ou não a operação.
     # ...Caso seja informado um valor invalido, o programa irá repetir até que seja informado um valor...
     # valido.
     while True:
-        pagamento = int(input('''Infome um metodo de pagamento:
+        pagamento = int(input('''Informe um metodo de pagamento:
 [1] À vista
 [2] Cartão de Crédito
 [3] Parcelado no Boleto
