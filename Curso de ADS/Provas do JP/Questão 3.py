@@ -17,26 +17,32 @@ while on == 'n':     # While usado para repetir ou não o programa
 
     # Conjunto de if's e elif's que irão ser executados de acordo com a opção escolhida pelo usuario no inicio do...
     # ...codigo.
+    on1 = 's'
     if opcoes == 1:
-        nome = input('Informe o nome do produto: ')
-        setor = int(input('Informe o setor em que o(s) produto(s) será(aõ) alocado(s): '))
-        qp = map(float, input('Informe a quantidade e preco respectivamente: ').split())
-        print('')
+        while on1 == 's':
+            nome = input('Informe o nome do produto: ')
+            setor = int(input('Informe o setor em que o(s) produto(s) será(aõ) alocado(s): '))
+            qp = map(float, input('Informe a quantidade e preço respectivamente: ').split())
+            print('')
 
-        # O primeiro if será responsavel por cadastrar os produtos em um 'setor' determinado pelo usuario. Setores
-        # esses que podem ser aumentados ou diminuidos de acordo com o pedido pelo 'cliente', isso sendo feito com
-        # uma pequena alteração no codigo para incluir-los
+            # O primeiro if será responsavel por cadastrar os produtos em um 'setor' determinado pelo usuario. Setores
+            # esses que podem ser aumentados ou diminuidos de acordo com o pedido pelo 'cliente', isso sendo feito com
+            # uma pequena alteração no codigo para incluir-los
 
-        if setor == 1:
-            setor_1.append(nome)
-            setor_1.append(setor)
-            setor_1.extend(qp)
-        # Através das funções de lista, as informações de cada produto é armazenado na lista correspondente ao...
-        # ...'setor' escolhido
-        elif setor == 2:
-            setor_2.append(nome)
-            setor_2.append(setor)
-            setor_2.extend(qp)
+            if setor == 1:
+                setor_1.append(nome)
+                setor_1.append(setor)
+                setor_1.extend(qp)
+
+            # Através das funções de lista, as informações de cada produto é armazenado na lista correspondente ao...
+            # ...'setor' escolhido
+            elif setor == 2:
+                setor_2.append(nome)
+                setor_2.append(setor)
+                setor_2.extend(qp)
+
+            on1 = input('Deseja adicionar outro? S ou N ? ').lower()
+            print('')
 
     elif opcoes == 2:
         # O segundo elif é responsavel colher as informações dos produtos correspondentes a sua quantidade em
@@ -44,7 +50,6 @@ while on == 'n':     # While usado para repetir ou não o programa
         setor_escolhido = int(input('Informe qual setor: '))
         if setor_escolhido == 1:
             soma = sum(setor_1[2::4])
-            print(setor_1[2::4])
             print(f'A quantide de produtos armazenados no setor 1 é {soma:.0f}')
             print('')
         # Ainda usando funções de lista, e utlizando de logica posicional nas listas, os dados são colhidos e é feito

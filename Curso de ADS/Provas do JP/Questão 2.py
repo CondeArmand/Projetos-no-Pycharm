@@ -6,8 +6,8 @@ for n in range(15):
     lista.append(num)
 
 # essa parte serve para definir os indices escolhidos pelo usuario
-indA = int(input('Informe o primeiro indice: '))
-indB = int(input('Informe o segundo indice: '))
+indA = int(input('Informe o indice A: '))
+indB = int(input('Informe o indice B: '))
 lista = lista[indA:indB + 1]
 
 # parte do final do codigo onde ele irá fazer a checagem de quais valores entre os indices escolhidos são impares.
