@@ -21,7 +21,7 @@ while on == 'n':     # While usado para repetir ou não o programa
     if opcoes == 1:
         while on1 == 's':
             nome = input('Informe o nome do produto: ')
-            setor = int(input('Informe o setor em que o(s) produto(s) será(aõ) alocado(s): '))
+            setor = int(input('Informe o setor em que o(s) produto(s) será(ão) alocado(s): '))
             qp = map(float, input('Informe a quantidade e preço respectivamente: ').split())
             print('')
 
@@ -62,8 +62,8 @@ while on == 'n':     # While usado para repetir ou não o programa
     elif opcoes == 3:
         # O terceiro Elif também tem uso de logica posicional nas listas para colher os dados corretos e realizar a...
         # ...soma dos mesmos como é pedido na questão.
-        soma = sum(setor_1[3::4])
-        soma2 = sum(setor_2[3::4])
+        soma = sum(setor_1[3::4]) * sum(setor_1[2::4])
+        soma2 = sum(setor_2[3::4]) * sum(setor_2[2::4])
         print(f'O capital investido total é de R${soma + soma2:.2f}')
         print('')
 
