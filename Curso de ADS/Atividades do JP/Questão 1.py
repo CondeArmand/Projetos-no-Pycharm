@@ -35,7 +35,7 @@ Digite 3 para escolher Papel;
                 print('\033[4;31mERRO! Digite somente 1, 2 ou 3.\033[m')
         else:
             print('\033[4;31mERRO! Digite somente 1, 2 ou 3.\033[m')
-    print('-=-' * 10)
+            print('-=-' * 10)
     cpu = randint(1, 3)
     jokenpo()
     if player == 1 and cpu == 2 or player == 2 and cpu == 3 or player == 3 and cpu == 1:
