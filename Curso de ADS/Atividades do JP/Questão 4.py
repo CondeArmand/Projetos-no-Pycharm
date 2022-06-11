@@ -1,4 +1,4 @@
-from Utilidades.Result import result, winner
+from Utilidades.Result import result
 from random import choice
 from Utilidades import create_deck, shuffle, linha
 soma1 = soma2 = carta1 = carta2 = ganhou1 = ganhou2 = 0
@@ -36,10 +36,12 @@ for c in range(3):
 player1['cartas'] = player1_cards
 player2['cartas'] = player2_cards
 resultado = result(soma1, soma2, {player1["nome"][:]}, {player2["nome"][:]})
+linha()
 print(f'As cartas do(a) {player1["nome"]} foram {player1["cartas"]}')
 print(f'E as cartas do(a) {player2["nome"]} foram {player2["cartas"]}')
 print(f'A(O) {player1["nome"]} fez {soma1} pontos')
 print(f'A(O) {player2["nome"]} 2 fez {soma2} pontos')
+linha()
 resultado1 = 21 - soma1
 resultado2 = 21 - soma2
 if resultado1 > 0 and resultado2 > 0:
@@ -57,11 +59,11 @@ if resultado1 > 0 and resultado2 > 0:
         ganhou2 += 1
     elif resultado1 == resultado2:
         print('Empate')
-
+linha()
 if ganhou1 > ganhou2:
     print(f'{player1["nome"]} ganhou')
 elif ganhou2 > ganhou1:
     print(f'{player2["nome"]} ganhou')
 elif soma1 == soma2:
     print(f'{player1["nome"]} e {player2["nome"]} empataram')
-
+linha()
