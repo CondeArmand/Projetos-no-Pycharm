@@ -1,7 +1,7 @@
 def decimalPraBinario(a=int):
     """
 
-    :param a: Recebe um valor decimal inteiro e converte para Binario
+    :param a: Recebe um valor decimal inteiro
     :return: Retorna um valor binario já formatado
     """
     return bin(a)[2:]
@@ -47,3 +47,11 @@ def somaMatrizes(a=list, b=list, key=None):
             print()
     else:
         return s
+
+
+arquivo = open('Documentação da prova.txt', 'a')
+arquivo.write('''-As funções utilizadas na segunda questão estão presentes no arquivo "Functions" e todas contém 
+docstrings para esclarecer seu funcionamento, basta usar o comando help().
+A questão2B irá gerar matrizes 3x3 aleatórias para maior comodidade na hora de testar.
+ ''')
+arquivo.close()

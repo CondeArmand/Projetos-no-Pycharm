@@ -10,4 +10,3 @@ while True:
         break
 print('==' * 20)
 print(f'O número {num} em binario é {decimalPraBinario(num)}')
-
