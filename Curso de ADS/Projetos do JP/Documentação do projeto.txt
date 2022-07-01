@@ -1,0 +1,12 @@
+Equipe composta por:
+Armando Pereira
+Carlos Michael
+Gabriel Marcos
+
+
+Como instalar o Numpy no linux pelo terminal:
+sudo apt-get install python-numpy
+
+
+Site oficial NumPy:
+https://numpy.org/doc/
