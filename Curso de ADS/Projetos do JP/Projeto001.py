@@ -1,0 +1,15 @@
+from Functions import crie_matriz, linha
+import numpy as np
+n = int(input('Informe uma matriz quadrada válida: '))
+linha()
+matrizA = crie_matriz(n, n)
+linha()
+matrizB = crie_matriz(n, n)
+linha()
+matrizBT = np.transpose(matrizB)
+x = np.trace(matrizA)
+matrizA = np.array(matrizA)
+matrizXA = np.multiply(matrizA, x)
+matrizR = np.matmul(matrizXA, matrizBT)
+print(matrizR)
+linha()

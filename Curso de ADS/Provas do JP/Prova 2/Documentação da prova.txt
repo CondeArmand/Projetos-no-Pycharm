@@ -1,7 +1,3 @@
--As funções utilizadas na segunda questão estão presentes no arquivo "Functions" e todas contém 
+- As funções utilizadas na segunda questão estão presentes no arquivo "Functions" e todas contém
 docstrings para esclarecer seu funcionamento, basta usar o comando help().
-A questão2B irá gerar matrizes 3x3 aleatórias para maior comodidade na hora de testar.
- -As funções utilizadas na segunda questão estão presentes no arquivo "Functions" e todas contém 
-docstrings para esclarecer seu funcionamento, basta usar o comando help().
-A questão2B irá gerar matrizes 3x3 aleatórias para maior comodidade na hora de testar.
- 
+- A questão2B irá gerar matrizes 3x3 aleatórias para maior comodidade na hora de testar.
